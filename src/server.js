@@ -14,8 +14,15 @@ app.use("/main", (req, res) => {
 
 // Adding middleware This function is also know as request handler
 // It will give response to all upcomming request comming in the this server
-app.use("/", (req, res) => {
+app.use("/test", (req, res) => {
   res.send("This is main data ");
+});
+
+// This can act as deafut handler 
+// "/" -->   will be resolve to this 
+// "/test123" --> will also be resolved to this
+app.use("/", (req, res) => {
+  res.send("This is root data ");
 });
 
 
