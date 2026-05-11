@@ -6,6 +6,11 @@ const app = express();
 //Defining route
 const port = 7777;
 
+//making an initial route for test
+// app.use("/main", (req, res) => {
+//   res.send("This is for test route");
+// });
+
 //Defining get route
 app.get("/main", (req, res) => {
   res.send("This is from get method");
