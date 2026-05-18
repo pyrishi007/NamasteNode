@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/advcanceRoutes.js",
-    "dev": "nodemon src/advcanceRoutes.js"
+    "start": "node src/responseHandler.js",
+    "dev": "nodemon src/responseHandler.js"
   },
   "author": "",
   "license": "ISC",
