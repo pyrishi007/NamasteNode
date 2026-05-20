@@ -61,8 +61,8 @@ in this case what if there is no response form the server to the client
 // );
 
 // example 3
-app.use(``
-  "/main" ,
+app.use(
+  "/main",
   (req, res, next) => {
     //   res.send("data is from route main");
     console.log("There is no response form this"); //1
