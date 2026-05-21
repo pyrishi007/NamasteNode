@@ -1,5 +1,6 @@
 const { userAuth, adminAuth } = require("../userInfo/user");
 
+// USER AUTHENTICATION
 const userAuthentication = (req, res, next) => {
   if (!userAuth) return res.status(404).send("user not found");
 
@@ -8,6 +9,7 @@ const userAuthentication = (req, res, next) => {
     : res.status(401).send("user is not authrixed");
 };
 
+// ADMIN AUTHENTICATION
 const adminAuthentication = (req, res, next) => {
   if (!adminAuth) return res.status(404).send("user not found");
 
@@ -18,5 +20,5 @@ const adminAuthentication = (req, res, next) => {
 
 module.exports = {
   userAuthentication,
-  adminAuthentication
+  adminAuthentication,
 };

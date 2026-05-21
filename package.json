@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/optimisedMidlleWare.js",
-    "dev": "nodemon src/optimisedMidlleWare.js"
+    "start": "node src/moreOptimised.js",
+    "dev": "nodemon src/moreOptimised.js"
   },
   "author": "",
   "license": "ISC",
