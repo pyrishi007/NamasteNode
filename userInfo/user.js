@@ -1,19 +1,18 @@
 // firstuser
-const userAuth_1 = {
-
+const userAuth = {
   isUserLoggedin: true,
   isUserSecure: true,
   isUserActive: true,
 };
 
 // Seconduser
-const userAuth_2 = {
+const adminAuth = {
   isUserLoggedin: true,
   isUserSecure: false,
   isUserActive: true,
 };
 
 module.exports = {
-  userAuth_1,
-  userAuth_2,
+  userAuth,
+  adminAuth,
 };
